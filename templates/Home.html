@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Homepage</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <style>
+        img{
+            width: 300px;
+            height: 200px;
+        }
+        h1{
+            color: white;
+            background-color: red;
+            line-height: 80px;
+            text-align: center;
+            font-size: 40px;
+        }
+        h1:hover{
+            background-color: cyan;
+        }
+    </style>
+      <link rel="icon" href="{% static 'images/609803.png' %}">
+</head>
+<body>
+<h1>Homepage</h1>
+<a class="btn btn-outline-danger" href="{% url 'about' %}">About</a>
+<a class="btn btn-outline-primary" href="{% url 'form' %}">Form</a>
+<p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium culpa debitis doloribus explicabo harum illum itaque, laboriosam molestiae, necessitatibus neque nisi, nulla odit praesentium quisquam rem repudiandae saepe sint!</span></p>
+
+<img src="{% static 'images/mycar2.jpg' %}" alt="">  
+<img src="{% static 'images/mycar1.jpg' %}" alt="">
+<img src="{% static 'images/mycar3.jpg' %}" alt="">
+<img src="{% static 'images/mycar4.jpg' %}" alt="">
+<img src="{% static 'images/mycar5.jpg' %}" alt="">
+<img src="{% static 'images/mycar3.jpg' %}" alt="">
+
+<br><br>
+
+<h1>Payment</h1>
+<p class="paragraph2"><span><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aspernatur autem beatae consectetur delectus et ex ipsam ipsum minus molestias nam nesciunt, odio officiis pariatur placeat praesentium quidem sint voluptatibus.</span><span>Amet aut culpa cum dolorum ducimus ex ipsa ipsum iste laboriosam laborum laudantium minima mollitia, natus necessitatibus nostrum numquam officia pariatur, placeat quae quibusdam sapiente sit soluta tenetur vero voluptate.</span><span>Ad consectetur consequuntur corporis cupiditate dicta dignissimos dolor ducimus esse est exercitationem fuga illum in inventore labore magnam, minus molestias, mollitia non nulla porro quam quod rem sapiente sunt veniam!</span><span>Architecto dolor dolore eveniet explicabo facere ipsam itaque, nemo praesentium quam quis sequi sit tempore vitae. Aperiam cumque enim esse illum itaque odio pariatur possimus, rem rerum tempora velit veritatis.</span><span>Ad asperiores aspernatur assumenda atque eos expedita fugit id in incidunt molestiae, officia perferendis quam quas quos recusandae repudiandae saepe, sunt tempore! Aut eligendi illum ipsam maiores possimus quidem voluptas!</span><span>Dolores esse in inventore ipsam mollitia natus officia rerum sed soluta? Consequuntur dolore eveniet, expedita ipsum iusto libero pariatur quam vitae! A assumenda atque delectus, deserunt dolorum enim nam nobis!</span></span></p>
+
+<img id="image" src="{% static 'images/mycar4.jpg' %}" alt="">
+
+</body>
+</html>
